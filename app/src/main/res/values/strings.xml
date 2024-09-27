@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CoffeeMachine</string>
+    <string name="zagolovok">Кофе машина</string>
+    <string name="vybor">Выберете кофе:</string>
+    <string name="americano">Americano</string>
+    <string name="cappuccino">Cappuccino</string>
+    <string name="latte">Latte</string>
+    <string name="expresso">Expresso</string>
+    <string name="exit">Выход</string>
+    <string name="sugar_count">Количество сахара:</string>
+    <string name="make">Приготовить</string>
+    <string name="milk_10">10 мл</string>
+    <string name="milk_20">20 мл</string>
+    <string name="milk_count">Количество молока</string>
+    <string name="sugar_10">10 грамм</string>
+    <string name="sugar_5">5 грамм</string>
+    <string name="sugar_0">Без сахара</string>
+    <string name="volume_02">0.2 л</string>
+    <string name="volume_01">0.1 л</string>
+    <string name="coffee_volume">Объем кофе:</string>
+</resources>

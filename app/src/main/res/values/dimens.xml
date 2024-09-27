@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="ll_margin">10dp</dimen>
+    <dimen name="sold_margin">50dp</dimen>
+    <dimen name="row_margin">30dp</dimen>
+    <dimen name="radio_height">35dp</dimen>
+    <dimen name="title_start">10dp</dimen>
+    <dimen name="groupe_start">100dp</dimen>
+    <dimen name="button_margine">30dp</dimen>
+    <dimen name="text_result">18sp</dimen>
+</resources>

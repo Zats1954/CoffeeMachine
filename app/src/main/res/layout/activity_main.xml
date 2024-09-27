@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.zatsoft.coffeeMachine.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/zagolovok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/tvCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vybor"
+        android:textSize="@dimen/text_size"
+        android:layout_marginStart="@dimen/title_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <RadioGroup
+        android:id="@+id/rgCoffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/groupe_start"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18">
+
+        <RadioButton
+            android:id="@+id/rbAmericano"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_height"
+            android:layout_gravity="start"
+            android:text="@string/americano"
+            android:textSize="@dimen/text_size" />
+
+        <RadioButton
+            android:id="@+id/rbCappuccino"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_height"
+            android:layout_gravity="start"
+            android:text="@string/cappuccino"
+            android:textSize="@dimen/text_size" />
+
+        <RadioButton
+            android:id="@+id/rbLatte"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_height"
+            android:layout_gravity="start"
+            android:text="@string/latte"
+            android:textSize="@dimen/text_size" />
+
+        <RadioButton
+            android:id="@+id/rbExpresso"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_height"
+            android:layout_gravity="start"
+            android:text="@string/expresso"
+            android:textSize="@dimen/text_size" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/coffee_volume"
+        android:textSize="@dimen/text_size"
+        android:layout_marginStart="@dimen/title_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <RadioGroup
+        android:id="@+id/rgVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_start"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46">
+
+        <RadioButton
+            android:id="@+id/rb100"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_height"
+            android:layout_gravity="start"
+            android:text="@string/volume_01"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="@dimen/button_margine"/>
+
+        <RadioButton
+            android:id="@+id/rb200"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_height"
+            android:layout_gravity="start"
+            android:text="@string/volume_02"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="@dimen/button_margine"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvSugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sugar_count"
+        android:textSize="@dimen/text_size"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <RadioGroup
+        android:id="@+id/rgSugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52">
+
+        <RadioButton
+            android:id="@+id/rbEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_height"
+            android:layout_gravity="start"
+            android:text="@string/sugar_0"
+            android:textSize="@dimen/text_size" />
+
+        <RadioButton
+            android:id="@+id/rb5gr"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_height"
+            android:layout_gravity="start"
+            android:text="@string/sugar_5"
+            android:textSize="@dimen/text_size" />
+
+        <RadioButton
+            android:id="@+id/rb10gr"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_height"
+            android:layout_gravity="start"
+            android:text="@string/sugar_10"
+            android:textSize="@dimen/text_size" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvMilk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/milk_count"
+        android:textSize="@dimen/text_size"
+        android:layout_marginStart="@dimen/title_start"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <RadioGroup
+        android:id="@+id/rgMilk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_start"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69">
+
+        <RadioButton
+            android:id="@+id/rb10ml"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_height"
+            android:layout_gravity="start"
+            android:text="@string/milk_10"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="30dp"/>
+
+        <RadioButton
+            android:id="@+id/rb20ml"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_height"
+            android:layout_gravity="start"
+            android:text="@string/milk_20"
+            android:textSize="@dimen/text_size"
+        android:layout_margin="30dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnMake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/make"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
+</androidx.constraintlayout.widget.ConstraintLayout>
