@@ -7,7 +7,6 @@ import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.core.content.ContentProviderCompat.requireContext
 import ru.zatsoft.coffeeMachine.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     private var volume = ""
     private lateinit var binding: ActivityMainBinding
     private lateinit var toolBar: Toolbar
-    private lateinit var intent: Intent
     private var coffee = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
